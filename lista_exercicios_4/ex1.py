@@ -1,30 +1,25 @@
 class Cidade:
 
     def __init__(self, nome):
-        
         self.nome = nome
 
 class Pessoa:
 
-    def __init__(self, nome, cidade):
-        
+    def __init__(self, nome, cidade): 
         self.nome = nome
-        self.cidade = cidade.nome
+        self.cidade = cidade
 
     def apresentacao_pessoa(self):
-
-        print(f'eu sou {self.nome} e moro na cidade {self.cidade}')
+        print(f'eu sou {self.nome} e moro na cidade {self.cidade.nome}')
 
 class Animal:
 
     def __init__(self, nome, dono):
-        
         self.nome = nome
-        self.dono = dono.nome
+        self.dono = dono
 
     def apresentacao_animal(self):
-
-        print(f'eu sou {self.nome} e meu dono é {self.dono}')
+        print(f'eu sou {self.nome} e meu dono é {self.dono.nome}')
 
 cidade1 = Cidade('Ceará-Mirim')
 pessoa1 = Pessoa('Maria', cidade1)
