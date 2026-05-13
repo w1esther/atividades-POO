@@ -108,7 +108,6 @@ lista_veiculos = [carro1, aviao1, moto1]
 for veiculo in lista_veiculos:
     print(veiculo.calcular_tempo_viagem(100))
 
-# 🔹 Teste da frota (composição)
 print("\n=== FROTA ===")
 frota = Frota()
 frota.adicionar_veiculo(carro1)
@@ -117,16 +116,12 @@ frota.adicionar_veiculo(moto1)
 
 frota.listar_veiculos()
 
-
-# 🔹 Teste da viagem (agregação)
 print("\n=== VIAGEM ===")
 motorista1 = Motorista('Maria', '123456')
 
 viagem1 = Viagem(motorista1, carro1, 150)
 print(viagem1.resumo_viagem())
 
-
-# 🔹 Teste de custo de manutenção
 print("\n=== MANUTENÇÃO ===")
 for veiculo in lista_veiculos:
     print(f'{veiculo.modelo}: R$ {veiculo.calcular_custo_manutencao()}')
