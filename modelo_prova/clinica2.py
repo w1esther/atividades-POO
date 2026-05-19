@@ -96,7 +96,7 @@ print(p1.get_identificacao())
 
 m1 = Medico('Maria', 5000, 838839293, 'clinica geral', 'TER/QUI')
 m2 = Medico('Rafaela',7000, 9838378293, 'Pediatria', 'SEG/QUA')
-ms1 = Medicoirurgiao('Gabriela', 6000, 49494848, 'neurologia', 'DOM', 'Cerebral')
+ms1 = MedicoCirurgiao('Gabriela', 6000, 49494848, 'neurologia', 'DOM', 'Cerebral')
 
 clinica1 = Clinica('Medfisio')
 clinica1.adicionar_paciente(p1)
